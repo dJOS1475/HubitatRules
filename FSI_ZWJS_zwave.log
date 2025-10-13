@@ -1,0 +1,207 @@
+2025-10-14 07:48:35.781 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -62 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      6 -                                     │ destination: 0 -                                     └─[BinarySwitchCCReport] -                                         current value: false
+2025-10-14 07:48:35.776 AM|CNTRLR   [Node 006] [~] [Binary Switch] currentValue: true => false        [Endpoint 6]
+2025-10-14 07:48:35.773 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:35.769 AM|SERIAL « 0x011000a800010607600d060025030000c2c8                              (18 bytes)
+2025-10-14 07:48:34.297 AM|DRIVER   all queues idle
+2025-10-14 07:48:34.295 AM|CNTRLR   [Node 006] [~] [Binary Switch] currentValue: true => true         [Endpoint 6]
+2025-10-14 07:48:34.290 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -62 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      6 -                                     │ destination: 0 -                                     └─[SupervisionCCReport] -                                         session id:          52 -                                         more updates follow: false -                                         status:              Success -                                         duration:            0s
+2025-10-14 07:48:34.285 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:34.279 AM|SERIAL « 0x011200a800010609600d06006c0234ff0000c247                          (20 bytes)
+2025-10-14 07:48:34.272 AM|DRIVER « [REQ] [SendDataBridge] -                                     callback id:            36 -                                     transmit status:        OK, took 10 ms -                                     routing attempts:       1 -                                     protocol & route speed: Z-Wave, 100 kbit/s -                                     routing scheme:         LWR -                                     ACK RSSI:               -61 dBm -                                     ACK channel no.:        0 -                                     TX channel no.:         0
+2025-10-14 07:48:34.267 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:34.264 AM|SERIAL « 0x011d00a92400000100c37f7f7f7f00000300000000030100007f7f7f7f7fd3    (31 bytes)
+2025-10-14 07:48:34.256 AM|DRIVER « [RES] [SendDataBridge] -                                     was sent: true
+2025-10-14 07:48:34.252 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:34.250 AM|SERIAL « 0x010401a90152                                                       (6 bytes)
+2025-10-14 07:48:34.243 AM|DRIVER » [Node 006] [REQ] [SendDataBridge] -                                   │ source node id:   1 -                                   │ transmit options: 0x25 -                                   │ callback id:      36 -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      0 -                                     │ destination: 6 -                                     └─[SupervisionCCGet] -                                       │ session id:      52 -                                       │ request updates: true -                                       └─[BinarySwitchCCSet] -                                           target value: true
+2025-10-14 07:48:34.238 AM|SERIAL » 0x011800a901060c600d00066c01b4042501ffff250000000024d6              (26 bytes)
+2025-10-14 07:48:34.224 AM|DRIVER   one or more queues busy
+2025-10-14 07:48:34.206 AM|DRIVER   all queues idle
+2025-10-14 07:48:34.201 AM|CNTRLR   [Node 006] [~] [Binary Switch] currentValue: false => true        [Endpoint 6]
+2025-10-14 07:48:34.195 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -62 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      6 -                                     │ destination: 0 -                                     └─[SupervisionCCReport] -                                         session id:          51 -                                         more updates follow: false -                                         status:              Success -                                         duration:            0s
+2025-10-14 07:48:34.160 AM|SERIAL « 0x011200a800010609600d06006c0233ff0000c240                          (20 bytes)
+2025-10-14 07:48:34.156 AM|DRIVER « [REQ] [SendDataBridge] -                                     callback id:            35 -                                     transmit status:        OK, took 10 ms -                                     routing attempts:       1 -                                     protocol & route speed: Z-Wave, 100 kbit/s -                                     routing scheme:         LWR -                                     ACK RSSI:               -62 dBm -                                     ACK channel no.:        0 -                                     TX channel no.:         0
+2025-10-14 07:48:34.154 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:34.146 AM|SERIAL « 0x011d00a92300000100c27f7f7f7f00000300000000030100007f7f7f7f7fd5    (31 bytes)
+2025-10-14 07:48:34.126 AM|DRIVER » [Node 006] [REQ] [SendDataBridge] -                                   │ source node id:   1 -                                   │ transmit options: 0x25 -                                   │ callback id:      35 -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      0 -                                     │ destination: 6 -                                     └─[SupervisionCCGet] -                                       │ session id:      51 -                                       │ request updates: true -                                       └─[BinarySwitchCCSet] -                                           target value: true
+2025-10-14 07:48:34.119 AM|SERIAL » 0x011800a901060c600d00066c01b3042501ffff250000000023d6              (26 bytes)
+2025-10-14 07:48:34.113 AM|DRIVER   one or more queues busy
+2025-10-14 07:48:32.844 AM|DRIVER   all queues idle
+2025-10-14 07:48:32.841 AM|DRIVER « [RES] [GetBackgroundRSSI] -                                     channel 0: -105 dBm -                                     channel 1: -106 dBm -                                     channel 2: -106 dBm -                                     channel 3: N/A
+2025-10-14 07:48:32.838 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:32.835 AM|SERIAL « 0x0107013b9796967f2a                                                 (9 bytes)
+2025-10-14 07:48:32.832 AM|SERIAL « [ACK]                                                                   (0x06)
+2025-10-14 07:48:32.829 AM|SERIAL » 0x0103003bc7                                                         (5 bytes)
+2025-10-14 07:48:32.820 AM|DRIVER   one or more queues busy
+2025-10-14 07:48:29.264 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -62 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      5 -                                     │ destination: 0 -                                     └─[BinarySwitchCCReport] -                                         current value: false
+2025-10-14 07:48:29.260 AM|CNTRLR   [Node 006] [~] [Binary Switch] currentValue: true => false        [Endpoint 5]
+2025-10-14 07:48:29.256 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:29.252 AM|SERIAL « 0x011000a800010607600d050025030000c2cb                              (18 bytes)
+2025-10-14 07:48:27.817 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -62 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      5 -                                     │ destination: 0 -                                     └─[SupervisionCCReport] -                                         session id:          50 -                                         more updates follow: false -                                         status:              Success -                                         duration:            0s
+2025-10-14 07:48:27.815 AM|DRIVER   all queues idle
+2025-10-14 07:48:27.812 AM|CNTRLR   [Node 006] [~] [Binary Switch] currentValue: true => true         [Endpoint 5]
+2025-10-14 07:48:27.807 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:27.804 AM|SERIAL « 0x011200a800010609600d05006c0232ff0000c242                          (20 bytes)
+2025-10-14 07:48:27.793 AM|DRIVER « [REQ] [SendDataBridge] -                                     callback id:            34 -                                     transmit status:        OK, took 10 ms -                                     routing attempts:       1 -                                     protocol & route speed: Z-Wave, 100 kbit/s -                                     routing scheme:         LWR -                                     ACK RSSI:               -62 dBm -                                     ACK channel no.:        0 -                                     TX channel no.:         0
+2025-10-14 07:48:27.779 AM|SERIAL « 0x011d00a92200000100c27f7f7f7f00000300000000030100007f7f7f7f7fd4    (31 bytes)
+2025-10-14 07:48:27.763 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:27.756 AM|SERIAL « 0x010401a90152                                                       (6 bytes)
+2025-10-14 07:48:27.750 AM|SERIAL « [ACK]                                                                   (0x06)
+2025-10-14 07:48:27.747 AM|DRIVER » [Node 006] [REQ] [SendDataBridge] -                                   │ source node id:   1 -                                   │ transmit options: 0x25 -                                   │ callback id:      34 -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      0 -                                     │ destination: 5 -                                     └─[SupervisionCCGet] -                                       │ session id:      50 -                                       │ request updates: true -                                       └─[BinarySwitchCCSet] -                                           target value: true
+2025-10-14 07:48:27.741 AM|SERIAL » 0x011800a901060c600d00056c01b2042501ffff250000000022d5              (26 bytes)
+2025-10-14 07:48:27.716 AM|DRIVER   one or more queues busy
+2025-10-14 07:48:27.680 AM|DRIVER   all queues idle
+2025-10-14 07:48:27.654 AM|CNTRLR   [Node 006] [~] [Binary Switch] currentValue: false => true        [Endpoint 5]
+2025-10-14 07:48:27.631 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -61 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      5 -                                     │ destination: 0 -                                     └─[SupervisionCCReport] -                                         session id:          49 -                                         more updates follow: false -                                         status:              Success -                                         duration:            0s
+2025-10-14 07:48:27.618 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:27.607 AM|SERIAL « 0x011200a800010609600d05006c0231ff0000c340                          (20 bytes)
+2025-10-14 07:48:27.576 AM|DRIVER « [REQ] [SendDataBridge] -                                     callback id:            33 -                                     transmit status:        OK, took 10 ms -                                     routing attempts:       1 -                                     protocol & route speed: Z-Wave, 100 kbit/s -                                     routing scheme:         LWR -                                     ACK RSSI:               -61 dBm -                                     ACK channel no.:        0 -                                     TX channel no.:         0
+2025-10-14 07:48:27.564 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:27.559 AM|SERIAL « 0x011d00a92100000100c37f7f7f7f00000300000000030100007f7f7f7f7fd6    (31 bytes)
+2025-10-14 07:48:27.552 AM|DRIVER « [RES] [SendDataBridge] -                                     was sent: true
+2025-10-14 07:48:27.545 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:27.528 AM|SERIAL « 0x010401a90152                                                       (6 bytes)
+2025-10-14 07:48:27.512 AM|SERIAL « [ACK]                                                                   (0x06)
+2025-10-14 07:48:27.498 AM|DRIVER » [Node 006] [REQ] [SendDataBridge] -                                   │ source node id:   1 -                                   │ transmit options: 0x25 -                                   │ callback id:      33 -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      0 -                                     │ destination: 5 -                                     └─[SupervisionCCGet] -                                       │ session id:      49 -                                       │ request updates: true -                                       └─[BinarySwitchCCSet] -                                           target value: true
+2025-10-14 07:48:27.490 AM|SERIAL » 0x011800a901060c600d00056c01b1042501ffff250000000021d5              (26 bytes)
+2025-10-14 07:48:27.475 AM|DRIVER   one or more queues busy
+2025-10-14 07:48:16.707 AM|CNTRLR   [Node 006] [~] [Notification] Home Security[Sensor status]: 0 =>  [Endpoint 2] -                                   2
+2025-10-14 07:48:16.702 AM|CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 2]
+2025-10-14 07:48:16.697 AM|CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 2]
+2025-10-14 07:48:16.692 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:16.689 AM|SERIAL « 0x011600a80001060d600d02007105000000ff07020000b218                  (24 bytes)
+2025-10-14 07:48:16.681 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -78 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      6 -                                     │ destination: 0 -                                     └─[BinarySwitchCCReport] -                                         current value: false
+2025-10-14 07:48:16.677 AM|CNTRLR   [Node 006] [~] [Binary Switch] currentValue: false => false       [Endpoint 6]
+2025-10-14 07:48:16.673 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:16.669 AM|SERIAL « 0x011000a800010607600d060025030000b2b8                              (18 bytes)
+2025-10-14 07:48:15.753 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -90 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      6 -                                     │ destination: 0 -                                     └─[BinarySwitchCCReport] -                                         current value: false
+2025-10-14 07:48:15.749 AM|CNTRLR   [Node 006] [~] [Binary Switch] currentValue: true => false        [Endpoint 6]
+2025-10-14 07:48:15.746 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:15.742 AM|SERIAL « 0x011000a800010607600d060025030000a6ac                              (18 bytes)
+2025-10-14 07:48:14.325 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -90 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      2 -                                     │ destination: 0 -                                     └─[NotificationCCReport] -                                         notification type:   7 -                                         notification status: 255 -                                         notification state:  idle
+2025-10-14 07:48:14.321 AM|CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 2]
+2025-10-14 07:48:14.314 AM|CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 2]
+2025-10-14 07:48:14.310 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:14.305 AM|SERIAL « 0x011600a80001060d600d02007105000000ff07000000a60e                  (24 bytes)
+2025-10-14 07:48:14.298 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -89 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      6 -                                     │ destination: 0 -                                     └─[BinarySwitchCCReport] -                                         current value: true
+2025-10-14 07:48:14.293 AM|CNTRLR   [Node 006] [~] [Binary Switch] currentValue: true => true         [Endpoint 6]
+2025-10-14 07:48:14.288 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:14.286 AM|SERIAL « 0x011000a800010607600d06002503ff00a752                              (18 bytes)
+2025-10-14 07:48:14.271 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -90 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      6 -                                     │ destination: 0 -                                     └─[BinarySwitchCCReport] -                                         current value: true
+2025-10-14 07:48:14.266 AM|CNTRLR   [Node 006] [~] [Binary Switch] currentValue: false => true        [Endpoint 6]
+2025-10-14 07:48:14.262 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:14.258 AM|SERIAL « 0x011000a800010607600d06002503ff00a653                              (18 bytes)
+2025-10-14 07:48:10.982 AM|CNTRLR   [Node 006] [~] [Notification] Home Security[Sensor status]: 0 =>  [Endpoint 1] -                                   2
+2025-10-14 07:48:10.978 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -69 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      1 -                                     │ destination: 0 -                                     └─[NotificationCCReport] -                                         notification type:   Home Security -                                         notification status: 255 -                                         notification state:  Intrusion
+2025-10-14 07:48:10.976 AM|CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 1]
+2025-10-14 07:48:10.969 AM|CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 1]
+2025-10-14 07:48:10.966 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:10.961 AM|SERIAL « 0x011600a80001060d600d01007105000000ff07020000bb12                  (24 bytes)
+2025-10-14 07:48:09.486 AM|CNTRLR   [Node 006] [~] [Notification] Home Security[Sensor status]: 2 =>  [Endpoint 1] -                                   0
+2025-10-14 07:48:09.483 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -71 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      1 -                                     │ destination: 0 -                                     └─[NotificationCCReport] -                                         notification type:   7 -                                         notification status: 255 -                                         notification state:  idle
+2025-10-14 07:48:09.478 AM|CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 1]
+2025-10-14 07:48:09.470 AM|CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 1]
+2025-10-14 07:48:09.466 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:48:09.461 AM|SERIAL « 0x011600a80001060d600d01007105000000ff07000000b912                  (24 bytes)
+2025-10-14 07:47:57.608 AM|DRIVER   all queues idle
+2025-10-14 07:47:57.606 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:47:57.597 AM|SERIAL « 0x0107013b9793937f2a                                                 (9 bytes)
+2025-10-14 07:47:57.588 AM|SERIAL « [ACK]                                                                   (0x06)
+2025-10-14 07:47:57.585 AM|DRIVER » [REQ] [GetBackgroundRSSI]
+2025-10-14 07:47:57.582 AM|SERIAL » 0x0103003bc7                                                         (5 bytes)
+2025-10-14 07:47:57.574 AM|DRIVER   one or more queues busy
+2025-10-14 07:47:38.269 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -70 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      2 -                                     │ destination: 0 -                                     └─[NotificationCCReport] -                                         notification type:   Home Security -                                         notification status: 255 -                                         notification state:  Intrusion
+2025-10-14 07:47:38.265 AM|CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 2]
+2025-10-14 07:47:38.261 AM|CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 2]
+2025-10-14 07:47:38.254 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:47:38.250 AM|SERIAL « 0x011600a80001060d600d02007105000000ff07020000ba10                  (24 bytes)
+2025-10-14 07:47:38.240 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -70 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      6 -                                     │ destination: 0 -                                     └─[BinarySwitchCCReport] -                                         current value: false
+2025-10-14 07:47:38.238 AM|CNTRLR   [Node 006] [~] [Binary Switch] currentValue: true => false        [Endpoint 6]
+2025-10-14 07:47:38.233 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:47:38.228 AM|SERIAL « 0x011000a800010607600d060025030000bab0                              (18 bytes)
+2025-10-14 07:47:37.100 AM|CNTRLR   [Node 006] [~] [Notification] Home Security[Sensor status]: 2 =>  [Endpoint 2] -                                   0
+2025-10-14 07:47:37.053 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -70 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      2 -                                     │ destination: 0 -                                     └─[NotificationCCReport] -                                         notification type:   7 -                                         notification status: 255 -                                         notification state:  idle
+2025-10-14 07:47:37.048 AM|CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 2]
+2025-10-14 07:47:37.040 AM|CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 2]
+2025-10-14 07:47:37.023 AM|SERIAL « 0x011600a80001060d600d02007105000000ff07000000ba12                  (24 bytes)
+2025-10-14 07:47:37.007 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -70 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      6 -                                     │ destination: 0 -                                     └─[BinarySwitchCCReport] -                                         current value: true
+2025-10-14 07:47:36.996 AM|CNTRLR   [Node 006] [~] [Binary Switch] currentValue: false => true        [Endpoint 6]
+2025-10-14 07:47:36.991 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:47:36.978 AM|SERIAL « 0x011000a800010607600d06002503ff00ba4f                              (18 bytes)
+2025-10-14 07:47:35.202 AM|CNTRLR   [Node 006] [~] [Notification] Home Security[Sensor status]: 0 =>  [Endpoint 2] -                                   2
+2025-10-14 07:47:35.197 AM|CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 2]
+2025-10-14 07:47:35.193 AM|CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 2]
+2025-10-14 07:47:35.189 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:47:35.184 AM|SERIAL « 0x011600a80001060d600d02007105000000ff07020000ba10                  (24 bytes)
+2025-10-14 07:47:35.174 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -70 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      6 -                                     │ destination: 0 -                                     └─[BinarySwitchCCReport] -                                         current value: false
+2025-10-14 07:47:35.170 AM|CNTRLR   [Node 006] [~] [Binary Switch] currentValue: false => false       [Endpoint 6]
+2025-10-14 07:47:35.167 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:47:35.164 AM|SERIAL « 0x011000a800010607600d060025030000bab0                              (18 bytes)
+2025-10-14 07:47:35.047 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -69 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      6 -                                     │ destination: 0 -                                     └─[BinarySwitchCCReport] -                                         current value: false
+2025-10-14 07:47:35.042 AM|CNTRLR   [Node 006] [~] [Binary Switch] currentValue: true => false        [Endpoint 6]
+2025-10-14 07:47:35.039 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:47:35.035 AM|SERIAL « 0x011000a800010607600d060025030000bbb1                              (18 bytes)
+2025-10-14 07:47:33.674 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -71 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      2 -                                     │ destination: 0 -                                     └─[NotificationCCReport] -                                         notification type:   7 -                                         notification status: 255 -                                         notification state:  idle
+2025-10-14 07:47:33.670 AM|CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 2]
+2025-10-14 07:47:33.665 AM|CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 2]
+2025-10-14 07:47:33.660 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:47:33.656 AM|SERIAL « 0x011600a80001060d600d02007105000000ff07000000b911                  (24 bytes)
+2025-10-14 07:47:33.651 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -71 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      6 -                                     │ destination: 0 -                                     └─[BinarySwitchCCReport] -                                         current value: true
+2025-10-14 07:47:33.645 AM|CNTRLR   [Node 006] [~] [Binary Switch] currentValue: false => true        [Endpoint 6]
+2025-10-14 07:47:33.640 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:47:33.635 AM|SERIAL « 0x011000a800010607600d06002503ff00b94c                              (18 bytes)
+2025-10-14 07:47:27.599 AM|DRIVER   all queues idle
+2025-10-14 07:47:27.596 AM|DRIVER « [RES] [GetBackgroundRSSI] -                                     channel 0: -104 dBm -                                     channel 1: -107 dBm -                                     channel 2: -107 dBm -                                     channel 3: N/A
+2025-10-14 07:47:27.593 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:47:27.589 AM|SERIAL « 0x0107013b9895957f25                                                 (9 bytes)
+2025-10-14 07:47:27.586 AM|SERIAL « [ACK]                                                                   (0x06)
+2025-10-14 07:47:27.583 AM|DRIVER » [REQ] [GetBackgroundRSSI]
+2025-10-14 07:47:27.581 AM|SERIAL » 0x0103003bc7                                                         (5 bytes)
+2025-10-14 07:47:27.575 AM|DRIVER   one or more queues busy
+2025-10-14 07:47:12.998 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -69 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      1 -                                     │ destination: 0 -                                     └─[NotificationCCReport] -                                         notification type:   Home Security -                                         notification status: 255 -                                         notification state:  Intrusion
+2025-10-14 07:47:12.999 AM|CNTRLR   [Node 006] [~] [Notification] Home Security[Sensor status]: 0 =>  [Endpoint 1] -                                   2
+2025-10-14 07:47:12.991 AM|CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 1]
+2025-10-14 07:47:12.985 AM|CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 1]
+2025-10-14 07:47:12.981 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:47:12.977 AM|SERIAL « 0x011600a80001060d600d01007105000000ff07020000bb12                  (24 bytes)
+2025-10-14 07:47:12.006 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -68 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      1 -                                     │ destination: 0 -                                     └─[NotificationCCReport] -                                         notification type:   7 -                                         notification status: 255 -                                         notification state:  idle
+2025-10-14 07:47:11.999 AM|CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 1]
+2025-10-14 07:47:11.995 AM|CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 1]
+2025-10-14 07:47:11.989 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:47:11.986 AM|SERIAL « 0x011600a80001060d600d01007105000000ff07000000bc17                  (24 bytes)
+2025-10-14 07:47:11.786 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -72 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      1 -                                     │ destination: 0 -                                     └─[NotificationCCReport] -                                         notification type:   Home Security -                                         notification status: 255 -                                         notification state:  Intrusion
+2025-10-14 07:47:11.783 AM|CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 1]
+2025-10-14 07:47:11.776 AM|CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 1]
+2025-10-14 07:47:11.771 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:47:11.766 AM|SERIAL « 0x011600a80001060d600d01007105000000ff07020000b811                  (24 bytes)
+2025-10-14 07:47:11.668 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -72 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      1 -                                     │ destination: 0 -                                     └─[NotificationCCReport] -                                         notification type:   7 -                                         notification status: 255 -                                         notification state:  idle
+2025-10-14 07:47:11.662 AM|CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 1]
+2025-10-14 07:47:11.656 AM|CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 1]
+2025-10-14 07:47:11.651 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:47:11.646 AM|SERIAL « 0x011600a80001060d600d01007105000000ff07000000b813                  (24 bytes)
+2025-10-14 07:47:10.371 AM|CNTRLR   [Node 006] [~] [Notification] Home Security[Sensor status]: 0 =>  [Endpoint 1] -                                   2
+2025-10-14 07:47:10.364 AM|CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 1]
+2025-10-14 07:47:10.344 AM|CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 1]
+2025-10-14 07:47:10.340 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:47:10.329 AM|SERIAL « 0x011600a80001060d600d01007105000000ff07020000ba13                  (24 bytes)
+2025-10-14 07:47:02.842 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -71 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      1 -                                     │ destination: 0 -                                     └─[NotificationCCReport] -                                         notification type:   7 -                                         notification status: 255 -                                         notification state:  idle
+2025-10-14 07:47:02.837 AM|CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 1]
+2025-10-14 07:47:02.833 AM|CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 1]
+2025-10-14 07:47:02.829 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:47:02.826 AM|SERIAL « 0x011600a80001060d600d01007105000000ff07000000b912                  (24 bytes)
+2025-10-14 07:47:02.680 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -72 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      1 -                                     │ destination: 0 -                                     └─[NotificationCCReport] -                                         notification type:   7 -                                         notification status: 255 -                                         notification state:  idle
+2025-10-14 07:47:02.676 AM|CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 1]
+2025-10-14 07:47:02.665 AM|CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 1]
+2025-10-14 07:47:02.660 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:47:02.656 AM|SERIAL « 0x011600a80001060d600d01007105000000ff07000000b813                  (24 bytes)
+2025-10-14 07:46:57.594 AM|DRIVER   all queues idle
+2025-10-14 07:46:57.585 AM|SERIAL « 0x0107013b9794947f2a                                                 (9 bytes)
+2025-10-14 07:46:57.587 AM|SERIAL » [ACK]                                                                   (0x06)
+2025-10-14 07:46:57.582 AM|SERIAL « [ACK]                                                                   (0x06)
+2025-10-14 07:46:57.579 AM|DRIVER » [REQ] [GetBackgroundRSSI]
+2025-10-14 07:46:57.576 AM|SERIAL » 0x0103003bc7                                                         (5 bytes)
+2025-10-14 07:46:57.572 AM|DRIVER   one or more queues busy
+2025-10-14 07:46:46.562 AM|DRIVER « [Node 006] [REQ] [BridgeApplicationCommand] -                                   │ RSSI: -69 dBm -                                   └─[MultiChannelCCCommandEncapsulation] -                                     │ source:      7 -                                     │ destination: 0 -                                     └─[MultilevelSensorCCReport] -                                         sensor type: Air temperature -                                         scale:       Celsius -                                         value:       26.9
+2025-10-14 07:46:46.557 AM|CNTRLR   [Node 006] [~] [Multilevel Sensor] Air temperature: 27.5 => 26.9  [Endpoint 7]
+2025-10-14 07:46:46.545 AM|CNTRLR   [Node 006] [Multilevel Sensor] Air temperature: metadata updated  [Endpoint 7]
+2025-10-14 07:46:46.535 AM|SERIAL « 0x011300a80001060a600d070031050122010d00bb83                        (21 bytes)
