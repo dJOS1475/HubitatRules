@@ -25,13 +25,14 @@
  *  1.0.11   2026-03-17    Dan Ogorchock    Minor changes to refresh() to reduce the chance of overwhelming the FP300 sensor, clean up firmware version number reporting, fix dateCode no being updated reliably
  *  1.1.0    2026-04-23    Dan Ogorchock    Add new User Preference to alter the behavior of "BOTH" presence detection mode to mimic Aqara's implementation on their hubs when this setting is Enabled.
  *  1.2.0    2026-06-09    kkossev          Aqara FP300 version 0.0.0_6542 fixes (plus some tweaks by Dan Ogorchock)
- *  1.2.1    2026-06-20    Dan Ogorchock    Stop auto-triggering refresh() after initialize()/updated().  The post-config read burst is a suspected cause of FP300 0.0.0_6542 instability (device leaving the network).  Refresh is now manual-only.
+ *  1.2.1    2026-06-20    Dan Ogorchock    Stop auto-triggering refresh() after initialize()/updated().  The post-config read burst is a suspected cause of FP300 0.0.0_6542 instability.
  *  1.3.0    2026-06-20    Dan Ogorchock    Ported FP300 0.0.0_6542 reliability changes from kkossev P1 driver v2.1.7: Aqara-like initialization handshake (0x00FF random token write + E1-style read sequence) in fp300BlackMagic(); presence/PIR reporting max interval changed from 0 to 1800s for a periodic heartbeat (targets motion-only reporting stalls).
+ *  1.3.1    2026-06-21    Dan Ogorchock    Restored auto-refresh() in updated() (removed in 1.2.1).  Preference saves require waking the sensor, so it is awake and ready to read back its saved settings and sync the Preferences page.  refresh() stays removed from initialize(), which runs on hub reboot when the battery sensor is asleep.
  *
  */
 
-static String version()   { "1.3.0" }
-static String timeStamp() { "2026/06/20 12:00" }
+static String version()   { "1.3.1" }
+static String timeStamp() { "2026/06/21 12:00" }
 
 import hubitat.device.Protocol
 import groovy.transform.Field
@@ -868,9 +869,11 @@ void updated() {
     }
    
     sendZigbeeCommands(cmds)
-    // NOTE: Do NOT auto-trigger refresh() here. The heavy read burst during the post-config
-    // window is a suspected cause of FP300 0.0.0_6542 firmware instability (device leaving the
-    // network). Use the manual Refresh command (after pressing the device button) when needed.
+    // Auto-refresh is OK here: updated() only fires when the user saves preferences, which
+    // requires waking the sensor (button press) for the settings to be written.  The sensor is
+    // therefore awake and ready, so reading back its saved settings reliably syncs the
+    // Preferences page.  (Contrast with initialize(), where the sensor is typically asleep.)
+    runIn(30, "refresh")
 }
 
 // ════════════════════════════════════════════════════════════════════════════
@@ -898,8 +901,10 @@ void configure() {
 
 void initialize() {
     log.info "${device.displayName} initialize() called"
-    // NOTE: refresh() is intentionally NOT auto-triggered here (see updated()) – the read burst
-    // is a suspected cause of FP300 0.0.0_6542 instability. Use the manual Refresh command instead.
+    // NOTE: refresh() is intentionally NOT auto-triggered here.  initialize() runs on hub
+    // reboot/firmware upgrade, when the battery sensor is typically asleep and not ready to
+    // answer a refresh – so the reads would just be wasted (and hit the device at a bad time).
+    // Use the manual Refresh command after a button press, or save preferences (see updated()).
     state.pirState    = device.currentValue("pirDetection") == "active"  ? 1 : 0
     state.mmwaveState = device.currentValue("roomState")   == "occupied" ? 1 : 0
 }
