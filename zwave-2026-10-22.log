@@ -716,3 +716,122 @@
 2026-10-22 7:33:15.524 am|<span style="white-space: pre-wrap;">« [ACK]                                                                   (0x06)</span>
 2026-10-22 7:33:15.508 am|<span style="white-space: pre-wrap;">  Attempting to recover controller again...</span>
 2026-10-22 7:33:15.506 am|<span style="white-space: pre-wrap;">  [Node 083] The node is causing the controller to become unresponsive, it is pr<br/>                                 esumed dead</span>
+
+
+2026-10-21 10:17:29.157 pm
+DRIVER
+» [REQ]
+[SendDataAbort]
+2026-10-21 10:17:29.155 pm
+SERIAL
+» 0x01030016ea
+(5 bytes)
+2026-10-21 10:17:24.432 pm
+CNTRLR
+« [Node 001]
+Dropping message with invalid payload
+2026-10-21 10:17:24.427 pm
+SERIAL
+Ox011800a8000001005c0a600d07003105012201b900ac007f
+(26 bytes)
+2026-10-21 10:17:24.254 pm
+SERIAL
+Ox011800a8000001005c0a600d030031050f42000000ad007f7
+(26 bytes)
+2026-10-21 10:17:24.254 pm
+CNTRLR
+« [Node 001]
+Dropping message with invalid payload
+
+2026-10-21 10:17:39.344 pm
+[SendDataBridge]
+DRIVER
+«［RES」
+was sent: true
+2026-10-21 10:17:39.342 pm
+SERIAL
+(6 bytes)
+2026-10-21 10:17:39.338 pm
+SERIAL
+« [ACK]
+(0x06)
+2026-10-21 10:17:39.334 pm
+SERIAL
+»
+Ox011000a90001005902984025000000008d6c
+(18 bytes)
+2026-10-21 10:17:39.332 pm
+DRIVER
+[SendDataBridge]
+source node id: 1
+transmit options: 0x25 callback id:
+141
+[SecurityCCNonceGet]
+2026-10-21 10:17:39.330 pm
+CNTRLR
+node IDs successful
+2026-10-21 10:17:39.327 pm
+SERIAL
+» [ACK]
+(0x06)
+2026-10-21 10:17:39.324 pm
+SERIAL
+0x01050106800171
+2026-10-21 10:17:39.321 pm
+SERIAL
+« [ACK]
+(0x06)
+2026-10-21 10:17:39.315 pm
+DRIVER
+« [RES]
+[Seria APISetup]
+command: SetNodelDType
+success: true
+
+2026-10-21 10:17:43.661 pm
+SERIAL
+« [ACK]
+(0x06)
+2026-10-21 10:17:43.660 pm
+DRIVER
+» [REQ]
+[SendDataAbort]
+2026-10-21 10:17:43.658 pm
+SERIAL
+» 0x01030016ea
+(5 bytes)
+2026-10-21 10:17:43.657 pm
+CNTRLR
+« [Node 089]
+received expected response prematurely, aborting ongoing transmissi
+on...
+2026-10-21 10:17:43.655 pm
+SERIAL
+» [ACK]
+(0x06)
+2026-10-21 10:17:43.653 pm
+SERIAL
+《^
+Ox011800a800000100590a9880caea05cef23df80e00ac007f71
+(26 bytes)
+2026-10-21 10:17:43.553 pm
+SERIAL
+« [ACK]
+(0x06)
+2026-10-21 10:17:43.550 pm
+SERIAL
+» 0x01030016ea
+(5 bytes)
+2026-10-21 10:17:43.548 pm
+CNTRLR
+« [Node 089]
+received expected response prematurely, aborting ongoing transmissi
+on...
+2026-10-21 10:17:43.546 pm
+SERIAL
+» ACK]
+(0x06)
+2026-10-21 10:17:43.543 pm
+SERIAL
+Ox011800a800000100590a9880caea05cef23df80e00b0007f71
+(26 hutac)
